@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+  text-align: center;
+  margin-top: 3.5%;
+}
+
+.checkhobbies:hover {
+  animation-name: checkboxes;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.sexe_:hover {
+  animation-name: checkboxes;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+legend {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.2%;
+}
+
+.hobbies {
+  margin-top: 10px;
+}
+
+form {
+  text-align: center;
+  padding: 35px;
+}
+
+fieldset {
+  border: 0 none;
+}
+
+label {
+  justify-content: center;
+  width: 150px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+@keyframes hoverall {
+  from {
+    background-color: rgba(141, 185, 211, 0.815);
+  }
+  to {
+    background-color: rgba(71, 156, 209, 0.815);
+  }
+}
+
+@keyframes hoverall2 {
+  from {
+    color: rgba(141, 185, 211, 0.815);
+  }
+  to {
+    color: red;
+  }
+}
+
+@keyframes checkboxes {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.2;
+  }
+}
+
+input:hover,
+#name:hover,
+#website:hover {
+  animation-name: hoverall;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+#civilite:hover {
+  animation-name: hoverall2;
+  animation-duration: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.error {
+  display: none;
+  color: red;
+}
+
+#website,
+#email, 
+#civilite {
+  border: 2px dotted rgba(40, 144, 204, 0.815);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  accent-color: rgba(40, 144, 204, 0.815);
+}
+
+input[type="submit"] {
+  border-radius: 5px;
+  box-shadow: 5px 0 5px -2px black;
+}

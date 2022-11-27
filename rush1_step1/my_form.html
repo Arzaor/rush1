@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Inscription</title>
+    <link rel="stylesheet" href="my_style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <form method="post" action="#" id="myForm">
+        <fieldset class="sexe">
+          <legend class="genre">
+            Sexe <img src="./heart2.png" alt="heart pixel" />
+          </legend>
+          <input type="radio" name="genre" id="homme" value="homme" class="sexe_"  />
+          <label for="homme">Homme</label>
+          <input type="radio" name="genre" id="femme" value="femme" class="sexe_"  />
+          <label for="femme">Femme</label>
+          <input type="radio" name="genre" id="autre" value="autre" class="sexe_"  />
+          <label for="autre">Autre</label>
+        </fieldset>
+        <br /><br />
+  
+        <label for="civilite">Civilité </label>
+        <select name="civilite" id="civilite" >
+          <option disabled selected value="">Sélectionnez</option>
+          <option value="m" class="civi">M.</option>
+          <option value="mme" class="civi">Mme.</option>
+        </select>
+        <img src="./heart2.png" alt="heart pixel" />
+        <br /><br />
+  
+        <label for="name">Nom</label>
+        <input type="text" name="name" id="name" minlength="2" />
+        <img src="./heart2.png" alt="heart pixel" />
+        <br /><br />
+  
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+        <img src="./heart2.png" alt="heart pixel" />
+        <br /><br />
+  
+        <label for="telephone">Telephone</label>
+        <input type="tel" name="telephone" id="telephone" />
+        <img src="./heart2.png" alt="heart pixel" />
+        <br /><br />
+  
+        <label for="website">Website</label>
+        <input type="url" name="website" id="website" />
+        <img src="./heart2.png" alt="heart pixel" />
+        <br /><br />
+  
+        <label for="birthday">Date de naissance </label>
+        <input type="date" name="birthday" id="birthday"  />
+        <img src="./heart2.png" alt="heart pixel" /> 
+        <br /><br />
+  
+        <fieldset class="hobbies">
+          <legend>Hobbies <img src="./heart2.png" alt="heart pixel" /></legend>
+  
+          <label for="game">Jeux video</label>
+          <input type="checkbox" name="game" id="game" value="game" class="checkhobbies" />
+  
+          <br /><br />
+          <label for="cinema">Cinema</label>
+  
+          <input
+            class="checkhobbies"
+            type="checkbox"
+            name="cinema"
+            id="cinema"
+            value="cinema"
+          />
+          <br /><br />
+  
+          <label for="lecture">Lecture</label>
+  
+          <input
+            class="checkhobbies"
+            type="checkbox"
+            name="lecture"
+            id="lecture"
+            value="lecture"
+          />
+          <br /><br />
+          <label for="sport">Sport</label>
+  
+          <input type="checkbox" name="sport" id="sport" value="sport" class="checkhobbies" />
+          <br /><br />
+  
+          <label for="informatique">Informatique</label>
+          <input
+            class="checkhobbies"
+            type="checkbox"
+            name="informatique"
+            id="informatique"
+            value="informatique"
+          />
+        </fieldset>
+        <input type="hidden" name="token" value="my first value"/>
+        <br /><br />
+        <input type="submit" name="validation" value="Validation" />
+      </form>
+
+    <script src="my_script.js"></script>
+  </body>
+</html>
